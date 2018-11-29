@@ -8,7 +8,6 @@ body {
 
 h1, h2{
     font-family: "Open Sans Condensed", "Arial", sans-serif;
-    text-transform: capitalize;
     
 }
 h2{
@@ -24,6 +23,7 @@ main h1{
     padding: 25px;
     border-bottom: 10px solid black;
     margin: 0;
+    text-transform: uppercase;
 }
 
 p{
@@ -96,7 +96,7 @@ aside, .imagem-logo{
     border-bottom: 5px solid black;
 }
 main {
-    width: 85%;
+    width: 84%;
     float: left;
     padding-bottom: 80px;
 }
@@ -109,6 +109,9 @@ cite {
 /*Sessão de classes*/
 /*Lembrar de colocar classes de acordo com o capitulo 8*/
 
+.imagem-logo{
+   width: 16%; 
+}
 
 .redes-sociais li{
     display: inline-block;
@@ -122,15 +125,15 @@ cite {
 }
 
 .github{
-    background-image: url(img/github.png);
+    background-image: url(../img/github.png);
 }
 
 .twitter{
-    background-image: url(img/twitter.png);
+    background-image: url(../img/twitter.png);
 }
 
 .linkedin{
-    background-image: url(img/linkedin.png);
+    background-image: url(../img/linkedin.png);
 }
 
 .citacao01{
