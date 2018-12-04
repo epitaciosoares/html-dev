@@ -1,5 +1,17 @@
+.inicio-post {
+    position: absolute;
+    top: 4em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #F2FFFC;
+    color: #000;
+    padding: 1.5em;
+}
+
 .foto-home {
     height: 200px;
+    border-radius: 10%;
 }
 
 .titulo-principal{
@@ -11,6 +23,7 @@
     border-bottom: 0.5rem solid black;
     margin: 0;
     text-transform: uppercase;
+    position: relative;
 }
 
 .subtitulo-principal{
@@ -97,8 +110,17 @@
     background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
+    position: relative;
 }
 
+.mais-recente{
+    background-color: #F2FFFC;
+    color: #F26;
+}
+
+.blog li {
+    width: 30%;
+}
 .blog small {
     position: relative;
     top: -2em;
@@ -108,6 +130,70 @@
     color: #FCF;
     padding: .5em;
     display: block;
+}
+
+.palavra-home {
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    color: #D5447E;
+    font-size:.5em;
+
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+}
+
+.boas-praticas {
+    top: 70%;
+    left: 20%;
+}
+
+.codigo-limpo {
+    top: 45%;
+    left: 10%;
+}
+
+.css3 {
+    top: 50%;
+    left: 30%;
+}
+
+.html5 {
+    top: 40%;
+    left: 80%;
+}
+
+.javascript {
+    top: 10%;
+    left: 60%;
+}
+
+.acessibilidade {
+    top: 30%;
+    left: 25%;
+}
+
+.responsivo {
+    top: 15%;
+    left: 15%;
+}
+
+.otimizacoes {
+    top: 60%;
+    left: 70%;
+}
+
+.agilidade {
+    top: 10%;
+    left: 30%;
+}
+
+.design {
+    top: 35%;
+    left: 65%;
 }
 
 footer {
