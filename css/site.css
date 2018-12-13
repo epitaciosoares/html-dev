@@ -137,11 +137,11 @@ cite {
     background-image: url(../img/linkedin.png);
 }
 
-.citacao01{
+.citacao-bio:nth-of-type(odd){
     float: right;
 }
 
-.citacao02{
+.citacao-bio:nth-of-type(even){
     float: left;
 }
 /*Sessão de IDs*/
@@ -163,4 +163,30 @@ cite {
     width:100%;
     background-size: 25% 100%;
     background-repeat: no-repeat;
+}
+
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+    color: red;
+}
+
+nav a:hover,
+nav a:focus {    text-shadow: 0 0 2px pink;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus {
+    transform: scale(1.2) rotate(-5deg);
 }
