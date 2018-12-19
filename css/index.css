@@ -65,6 +65,23 @@
     font-size: 4em;
     transform:  rotate(-5deg) skew(-10deg);
     display: inline-block;
+    -webkit-animation: flutua 1s infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+.saudacao:hover em {
+    animation-play-state: paused;
 }
 
 .botao-index {
@@ -78,6 +95,15 @@
     display: block;
     text-align: center;
     box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
 }
 
 .secao-inicio {
@@ -274,8 +300,20 @@
     top: 0;
     right: 0;
     transform-origin: 0 0;
-    transform: translate(6.5754em, -2.4749em) rotate(45deg);
+    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     
+    -webkit-animation: aparece 0.5s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: backwards;
+    
+}
+
+@keyframes aparece {
+    /* podemos usar a palavra-chave "from" também no lugar de 0% */
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 html, body {

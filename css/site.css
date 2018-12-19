@@ -91,13 +91,13 @@ em {
 
 aside, .imagem-logo{
     float: right;
-    width: 15%;
+    width: width: calc(0.8 * 300px); ;
     box-sizing: border-box;
     border-left: 0.5em solid black;
     border-bottom: 0.5em solid black;
 }
 main {
-    width: 84%;
+    width: calc(100% - 0.9 * 300px);
     float: left;
     padding-bottom: 8em;
 }
@@ -111,7 +111,7 @@ cite {
 /*Lembrar de colocar classes de acordo com o capitulo 8*/
 
 .imagem-logo{
-   width: 16%; 
+   width: calc(0.9 * 300px); 
 }
 
 .redes-sociais li{
@@ -173,7 +173,24 @@ footer a:focus {
 }
 
 nav a:hover,
-nav a:focus {    text-shadow: 0 0 2px pink;
+nav a:focus {   
+    text-shadow: 0 0 2px pink;
+}
+
+.citacao-bio{
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 0s, 1s;
+}
+
+.citacao-bio::before {
+    content: '“';
+    position: absolute;
+    font-size: 10em;
+    color: #bbb;
+}
+
+.citacao-bio > p {
+    position: relative;
 }
 
 .citacao-bio:hover,
@@ -189,4 +206,74 @@ nav a:focus {    text-shadow: 0 0 2px pink;
 .citacao-bio:nth-of-type(even):hover,
 .citacao-bio:nth-of-type(even):focus {
     transform: scale(1.2) rotate(-5deg);
+}
+
+div > p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
+.redes-sociais a {
+    position: relative;
+}
+
+.redes-sociais a:hover::after,
+.redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+}
+
+.redes-sociais a:hover::before,
+.redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+}
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: white;
+}
+
+.habilidades thead th {
+  /* não precisamos colocar font-weight e color
+     pois já fizemos isso para todos os th */
+    background-color: #3C1D3D;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: .25em;
+    margin: 1em 0;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+    vertical-align: middle;
 }

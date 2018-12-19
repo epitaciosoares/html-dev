@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog - Epitácio Soares</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    </head>
+    
+    <body>
+        <main>
+            <h1>Contato</h1>
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <label class="com-icone" for="nome">Nome:</label>
+                        <input   placeholder="Digite seu nome" id="nome" type="text" name="nome-contato" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                        <label class="com-icone" for="email">Email:</label>
+                        <input  id="email" type="email" name="email-contato" required placeholder="Digite seu e-mail">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <label>
+                            <input type="radio" name="assunto" value="Blog">
+                            Blog
+                        </label>
+                        <label>
+                            <input type="radio" name="assunto" value="Serviço">
+                            Serviço
+                        </label>
+                        <fieldset>
+                            <input type="radio" name="assunto" value="Outro" id="outro">
+                            <label for="outro">Outro</label>
+                            <input type="text" name="outro-assunto">
+                        </fieldset>
+                    </fieldset>
+                    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="msg" placeholder="Digite aqui sua mensagem"></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </main>
+        
+         <img class="imagem-logo" src="img/eu.jpg" alt="Foto Epitácio Soares.">
+        
+        <aside>
+            <h1>Epitácio Soares</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="bio.html">Sobre mim</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <ul class="redes-sociais">
+                <li><a class="github" href="#" data-tooltip="Veja meus projetos opensource">Github</a></li>
+                <li><a class="twitter" href="#" data-tooltip="Siga-me no Twitter">Twitter</a></li>
+                <li><a class="linkedin" href="#" data-tooltip="Veja meu currículo">Linkedin</a></li>
+            </ul>            
+        </aside>
+        
+        <footer id="rodape-pagina">
+            &copy; Epitácio Soares 2018
+        </footer>
+        
+    </body>
+</html>
