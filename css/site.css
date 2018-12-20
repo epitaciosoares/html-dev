@@ -4,6 +4,8 @@ body {
     font-family: "Crimson Text", "Time New Roman", serif;
     background-color: #F2FFFC;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1, h2{
@@ -42,11 +44,10 @@ blockquote {
 }
 
 aside {
+    text-align: center;
     background-color: #3C1D3D;
     color: #F2FFFC;
-    text-align: center;
-    clear: right;
-    box-sizing: border-box;
+    padding: 1em;
     
 }
 
@@ -75,9 +76,10 @@ aside a {
 }
 
 main div {
-    width: 50%;
-    margin: auto;
-    padding: 2em 0;
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
 }
 
 strong {
@@ -88,18 +90,27 @@ em {
     font-style: italic;
 }
 
-
 aside, .imagem-logo{
-    float: right;
-    width: width: calc(0.8 * 300px); ;
+    border-left: .5em solid black;
     box-sizing: border-box;
-    border-left: 0.5em solid black;
-    border-bottom: 0.5em solid black;
+}
+
+aside{
+    width: calc(0.9 * 300px);
+    padding-top: calc(450px + 1em);
+}
+
+.imagem-logo{
+    width: calc(1 * 300px);
+    border-bottom: .5em solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 450px;
 }
 main {
-    width: calc(100% - 0.9 * 300px);
-    float: left;
     padding-bottom: 8em;
+    flex-grow: 1;
 }
 
 cite {
@@ -109,10 +120,6 @@ cite {
 
 /*Sessão de classes*/
 /*Lembrar de colocar classes de acordo com o capitulo 8*/
-
-.imagem-logo{
-   width: calc(0.9 * 300px); 
-}
 
 .redes-sociais li{
     display: inline-block;

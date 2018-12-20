@@ -137,13 +137,13 @@
 }
 
 .trabalhos ul {
-    overflow: hidden;
-    border: .5em solid black;
+    display: flex;    
 }
 
 .trabalhos li {
-    float: left;
+    flex: 1;
     width: 33.333%;
+    border: .5em solid #000;
 }
 
 .trabalhos img {
@@ -324,6 +324,9 @@ html, body {
 body {
     perspective: 6px;
     perspective-origin: 50% 160px;
+    /* sobrescreve o site.css */
+    display: block;
+
 }
 
 footer {
@@ -355,4 +358,17 @@ main {
 .blog a:focus {
     background-color: #F2FFFC;
     color: #F26;
+}
+
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
 }
